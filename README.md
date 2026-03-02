@@ -110,6 +110,7 @@ Projektet viser 3 måder at bruge billeder på i `HomePage`. Brug den metode, de
    Bruges når billedet er en del af appens kildekode.
    - God til illustrationer, ikoner og billeder der versionstyres med koden.
    - Vite håndterer filen i build-processen og giver den et unikt filnavn.
+
    ```jsx
    import logo from "../assets/example.svg";
    <img src={logo} alt="Eksempel-logo" />;
@@ -119,8 +120,9 @@ Projektet viser 3 måder at bruge billeder på i `HomePage`. Brug den metode, de
    Bruges når billedet skal ligge på en fast offentlig sti.
    - God til fx logo/favicons eller filer, du vil kunne referere direkte til.
    - Filen bliver ikke importeret i JavaScript.
+
    ```jsx
-   <img src="logo.webp" alt="Logo fra public" />;
+   <img src="logo.webp" alt="Logo fra public" />
    ```
 
 3. Ekstern URL  
@@ -128,10 +130,11 @@ Projektet viser 3 måder at bruge billeder på i `HomePage`. Brug den metode, de
    - God til API-data, CDN eller tredjeparts-indhold.
    - Kræver internetadgang og at URL'en er stabil.
    ```jsx
-   <img src="https://picsum.photos/200" alt="Eksternt billede" />;
+   <img src="https://picsum.photos/200" alt="Eksternt billede" />
    ```
 
 Tip:
+
 - Brug altid meningsfuld `alt`-tekst af hensyn til tilgængelighed.
 - Brug `src/assets`, når billedet er en fast del af projektet.
 - Brug `public`, når du vil have en enkel, stabil sti uden import.
